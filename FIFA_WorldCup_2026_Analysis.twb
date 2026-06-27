@@ -1,0 +1,2485 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='fifa_wc_2026_limpio' inline='true' name='federated.1mzzqto0893h7w1486fj41b10av5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fifa_wc_2026_limpio' name='textscan.1173bzc0dhmubg14pgxw00stctmd'>
+            <connection class='textscan' directory='C:/Users/Lenovo/Documents/ProjectAnalyticsWorldCup2026' filename='fifa_wc_2026_limpio.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1173bzc0dhmubg14pgxw00stctmd' name='fifa_wc_2026_limpio.csv' table='[fifa_wc_2026_limpio#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES' separator=';'>
+            <column datatype='string' name='player_id' ordinal='0' />
+            <column datatype='string' name='player_name' ordinal='1' />
+            <column datatype='integer' name='age' ordinal='2' />
+            <column datatype='string' name='nationality' ordinal='3' />
+            <column datatype='string' name='team' ordinal='4' />
+            <column datatype='integer' name='jersey_number' ordinal='5' />
+            <column datatype='string' name='position' ordinal='6' />
+            <column datatype='integer' name='height_cm' ordinal='7' />
+            <column datatype='integer' name='weight_kg' ordinal='8' />
+            <column datatype='string' name='preferred_foot' ordinal='9' />
+            <column datatype='string' name='club_name' ordinal='10' />
+            <column datatype='integer' name='market_value_eur' ordinal='11' />
+            <column datatype='string' name='match_id' ordinal='12' />
+            <column datatype='date' name='match_date' ordinal='13' />
+            <column datatype='string' name='stadium' ordinal='14' />
+            <column datatype='string' name='city' ordinal='15' />
+            <column datatype='string' name='opponent_team' ordinal='16' />
+            <column datatype='string' name='tournament_stage' ordinal='17' />
+            <column datatype='string' name='match_result' ordinal='18' />
+            <column datatype='integer' name='goals_team' ordinal='19' />
+            <column datatype='integer' name='goals_opponent' ordinal='20' />
+            <column datatype='integer' name='minutes_played' ordinal='21' />
+            <column datatype='integer' name='goals' ordinal='22' />
+            <column datatype='integer' name='assists' ordinal='23' />
+            <column datatype='integer' name='shots' ordinal='24' />
+            <column datatype='integer' name='shots_on_target' ordinal='25' />
+            <column datatype='string' name='expected_goals_xg' ordinal='26' />
+            <column datatype='string' name='expected_assists_xa' ordinal='27' />
+            <column datatype='integer' name='key_passes' ordinal='28' />
+            <column datatype='integer' name='successful_passes' ordinal='29' />
+            <column datatype='integer' name='total_passes' ordinal='30' />
+            <column datatype='string' name='pass_accuracy' ordinal='31' />
+            <column datatype='integer' name='dribbles_attempted' ordinal='32' />
+            <column datatype='integer' name='successful_dribbles' ordinal='33' />
+            <column datatype='integer' name='crosses' ordinal='34' />
+            <column datatype='integer' name='successful_crosses' ordinal='35' />
+            <column datatype='integer' name='tackles' ordinal='36' />
+            <column datatype='integer' name='interceptions' ordinal='37' />
+            <column datatype='integer' name='clearances' ordinal='38' />
+            <column datatype='integer' name='blocks' ordinal='39' />
+            <column datatype='integer' name='aerial_duels_won' ordinal='40' />
+            <column datatype='integer' name='aerial_duels_lost' ordinal='41' />
+            <column datatype='integer' name='recoveries' ordinal='42' />
+            <column datatype='integer' name='defensive_actions' ordinal='43' />
+            <column datatype='integer' name='fouls_committed' ordinal='44' />
+            <column datatype='integer' name='fouls_suffered' ordinal='45' />
+            <column datatype='integer' name='yellow_cards' ordinal='46' />
+            <column datatype='integer' name='red_cards' ordinal='47' />
+            <column datatype='integer' name='offsides' ordinal='48' />
+            <column datatype='integer' name='saves' ordinal='49' />
+            <column datatype='string' name='save_percentage' ordinal='50' />
+            <column datatype='integer' name='punches' ordinal='51' />
+            <column datatype='integer' name='clean_sheet' ordinal='52' />
+            <column datatype='integer' name='goals_conceded' ordinal='53' />
+            <column datatype='integer' name='penalty_saves' ordinal='54' />
+            <column datatype='string' name='distance_covered_km' ordinal='55' />
+            <column datatype='string' name='sprint_distance_km' ordinal='56' />
+            <column datatype='string' name='top_speed_kmh' ordinal='57' />
+            <column datatype='integer' name='accelerations' ordinal='58' />
+            <column datatype='integer' name='decelerations' ordinal='59' />
+            <column datatype='string' name='stamina_score' ordinal='60' />
+            <column datatype='string' name='player_rating' ordinal='61' />
+            <column datatype='string' name='performance_score' ordinal='62' />
+            <column datatype='string' name='offensive_contribution' ordinal='63' />
+            <column datatype='string' name='defensive_contribution' ordinal='64' />
+            <column datatype='string' name='possession_impact' ordinal='65' />
+            <column datatype='string' name='pressure_resistance' ordinal='66' />
+            <column datatype='string' name='creativity_score' ordinal='67' />
+            <column datatype='string' name='consistency_score' ordinal='68' />
+            <column datatype='string' name='clutch_performance_score' ordinal='69' />
+            <column datatype='integer' name='total_goals_tournament' ordinal='70' />
+            <column datatype='integer' name='total_assists_tournament' ordinal='71' />
+            <column datatype='integer' name='total_minutes_tournament' ordinal='72' />
+            <column datatype='integer' name='player_of_match_awards' ordinal='73' />
+            <column datatype='real' name='tournament_rating' ordinal='74' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_id]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>player_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_name]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>player_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nationality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nationality]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>nationality</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>team</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jersey_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jersey_number]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>jersey_number</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[position]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>position</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height_cm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[height_cm]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>height_cm</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight_kg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weight_kg]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>weight_kg</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>preferred_foot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[preferred_foot]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>preferred_foot</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>club_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[club_name]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>club_name</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_value_eur</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[market_value_eur]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>market_value_eur</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[match_id]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[match_date]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>match_date</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stadium</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stadium]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>stadium</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opponent_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[opponent_team]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>opponent_team</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tournament_stage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tournament_stage]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>tournament_stage</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[match_result]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>match_result</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_team</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[goals_team]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>goals_team</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_opponent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[goals_opponent]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>goals_opponent</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes_played</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minutes_played]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>minutes_played</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[goals]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>goals</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[assists]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>assists</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shots</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shots]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>shots</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shots_on_target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shots_on_target]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>shots_on_target</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected_goals_xg</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[expected_goals_xg]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>expected_goals_xg</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected_assists_xa</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[expected_assists_xa]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>expected_assists_xa</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>key_passes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[key_passes]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>key_passes</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>successful_passes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[successful_passes]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>successful_passes</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_passes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_passes]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>total_passes</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pass_accuracy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pass_accuracy]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>pass_accuracy</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dribbles_attempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dribbles_attempted]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>dribbles_attempted</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>successful_dribbles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[successful_dribbles]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>successful_dribbles</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crosses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[crosses]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>crosses</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>successful_crosses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[successful_crosses]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>successful_crosses</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tackles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tackles]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>tackles</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>interceptions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[interceptions]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>interceptions</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clearances</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clearances]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>clearances</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blocks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[blocks]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>blocks</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aerial_duels_won</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[aerial_duels_won]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>aerial_duels_won</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aerial_duels_lost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[aerial_duels_lost]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>aerial_duels_lost</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recoveries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[recoveries]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>recoveries</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defensive_actions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[defensive_actions]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>defensive_actions</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fouls_committed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fouls_committed]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>fouls_committed</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fouls_suffered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fouls_suffered]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>fouls_suffered</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yellow_cards</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yellow_cards]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>yellow_cards</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>red_cards</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[red_cards]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>red_cards</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offsides</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[offsides]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>offsides</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>saves</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[saves]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>saves</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>save_percentage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[save_percentage]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>save_percentage</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>punches</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[punches]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>punches</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clean_sheet</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clean_sheet]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>clean_sheet</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_conceded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[goals_conceded]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>goals_conceded</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penalty_saves</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[penalty_saves]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>penalty_saves</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance_covered_km</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[distance_covered_km]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>distance_covered_km</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sprint_distance_km</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sprint_distance_km]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>sprint_distance_km</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>top_speed_kmh</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[top_speed_kmh]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>top_speed_kmh</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>accelerations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[accelerations]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>accelerations</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>decelerations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[decelerations]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>decelerations</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stamina_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stamina_score]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>stamina_score</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_rating]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>player_rating</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>performance_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[performance_score]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>performance_score</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offensive_contribution</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[offensive_contribution]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>offensive_contribution</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defensive_contribution</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[defensive_contribution]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>defensive_contribution</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>possession_impact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[possession_impact]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>possession_impact</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pressure_resistance</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pressure_resistance]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>pressure_resistance</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>creativity_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[creativity_score]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>creativity_score</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>consistency_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[consistency_score]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>consistency_score</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clutch_performance_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clutch_performance_score]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>clutch_performance_score</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_goals_tournament</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_goals_tournament]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>total_goals_tournament</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_assists_tournament</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_assists_tournament]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>total_assists_tournament</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_minutes_tournament</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_minutes_tournament]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>total_minutes_tournament</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_of_match_awards</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[player_of_match_awards]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>player_of_match_awards</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tournament_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tournament_rating]</local-name>
+            <parent-name>[fifa_wc_2026_limpio.csv]</parent-name>
+            <remote-alias>tournament_rating</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='fifa_wc_2026_limpio.csv' datatype='table' name='[__tableau_internal_object_id__].[fifa_wc_2026_limpio.csv_A88FCDCDC44E4AD78095457FFCCB8E42]' role='measure' type='quantitative' />
+      <column caption='Accelerations' datatype='integer' name='[accelerations]' role='measure' type='quantitative' />
+      <column caption='Aerial Duels Lost' datatype='integer' name='[aerial_duels_lost]' role='measure' type='quantitative' />
+      <column caption='Aerial Duels Won' datatype='integer' name='[aerial_duels_won]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Assists' datatype='integer' name='[assists]' role='measure' type='quantitative' />
+      <column caption='Blocks' datatype='integer' name='[blocks]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Clean Sheet' datatype='integer' name='[clean_sheet]' role='measure' type='quantitative' />
+      <column caption='Clearances' datatype='integer' name='[clearances]' role='measure' type='quantitative' />
+      <column caption='Club Name' datatype='string' name='[club_name]' role='dimension' type='nominal' />
+      <column caption='Clutch Performance Score' datatype='string' name='[clutch_performance_score]' role='dimension' type='nominal' />
+      <column caption='Consistency Score' datatype='string' name='[consistency_score]' role='dimension' type='nominal' />
+      <column caption='Creativity Score' datatype='string' name='[creativity_score]' role='dimension' type='nominal' />
+      <column caption='Crosses' datatype='integer' name='[crosses]' role='measure' type='quantitative' />
+      <column caption='Decelerations' datatype='integer' name='[decelerations]' role='measure' type='quantitative' />
+      <column caption='Defensive Actions' datatype='integer' name='[defensive_actions]' role='measure' type='quantitative' />
+      <column caption='Defensive Contribution' datatype='string' name='[defensive_contribution]' role='dimension' type='nominal' />
+      <column caption='Distance Covered Km' datatype='string' name='[distance_covered_km]' role='dimension' type='nominal' />
+      <column caption='Dribbles Attempted' datatype='integer' name='[dribbles_attempted]' role='measure' type='quantitative' />
+      <column caption='Expected Assists Xa' datatype='string' name='[expected_assists_xa]' role='dimension' type='nominal' />
+      <column caption='Expected Goals Xg' datatype='string' name='[expected_goals_xg]' role='dimension' type='nominal' />
+      <column caption='Fouls Committed' datatype='integer' name='[fouls_committed]' role='measure' type='quantitative' />
+      <column caption='Fouls Suffered' datatype='integer' name='[fouls_suffered]' role='measure' type='quantitative' />
+      <column caption='Goals' datatype='integer' name='[goals]' role='measure' type='quantitative' />
+      <column caption='Goals Conceded' datatype='integer' name='[goals_conceded]' role='measure' type='quantitative' />
+      <column caption='Goals Opponent' datatype='integer' name='[goals_opponent]' role='measure' type='quantitative' />
+      <column caption='Goals Team' datatype='integer' name='[goals_team]' role='measure' type='quantitative' />
+      <column caption='Height Cm' datatype='integer' name='[height_cm]' role='measure' type='quantitative' />
+      <column caption='Interceptions' datatype='integer' name='[interceptions]' role='measure' type='quantitative' />
+      <column caption='Jersey Number' datatype='integer' name='[jersey_number]' role='dimension' type='ordinal' />
+      <column caption='Key Passes' datatype='integer' name='[key_passes]' role='dimension' type='ordinal' />
+      <column caption='Market Value Eur' datatype='integer' name='[market_value_eur]' role='measure' type='quantitative' />
+      <column caption='Match Date' datatype='date' name='[match_date]' role='dimension' type='ordinal' />
+      <column caption='Match Id' datatype='string' name='[match_id]' role='dimension' type='nominal' />
+      <column caption='Match Result' datatype='string' name='[match_result]' role='dimension' type='nominal' />
+      <column caption='Minutes Played' datatype='integer' name='[minutes_played]' role='measure' type='quantitative' />
+      <column caption='Nationality' datatype='string' name='[nationality]' role='dimension' type='nominal' />
+      <column caption='Offensive Contribution' datatype='string' name='[offensive_contribution]' role='dimension' type='nominal' />
+      <column caption='Offsides' datatype='integer' name='[offsides]' role='measure' type='quantitative' />
+      <column caption='Opponent Team' datatype='string' name='[opponent_team]' role='dimension' type='nominal' />
+      <column caption='Pass Accuracy' datatype='string' name='[pass_accuracy]' role='dimension' type='nominal' />
+      <column caption='Penalty Saves' datatype='integer' name='[penalty_saves]' role='measure' type='quantitative' />
+      <column caption='Performance Score' datatype='string' name='[performance_score]' role='dimension' type='nominal' />
+      <column caption='Player Id' datatype='string' name='[player_id]' role='dimension' type='nominal' />
+      <column caption='Player Name' datatype='string' name='[player_name]' role='dimension' type='nominal' />
+      <column caption='Player Of Match Awards' datatype='integer' name='[player_of_match_awards]' role='measure' type='quantitative' />
+      <column caption='Player Rating' datatype='string' name='[player_rating]' role='dimension' type='nominal' />
+      <column caption='Position' datatype='string' name='[position]' role='dimension' type='nominal' />
+      <column caption='Possession Impact' datatype='string' name='[possession_impact]' role='dimension' type='nominal' />
+      <column caption='Preferred Foot' datatype='string' name='[preferred_foot]' role='dimension' type='nominal' />
+      <column caption='Pressure Resistance' datatype='string' name='[pressure_resistance]' role='dimension' type='nominal' />
+      <column caption='Punches' datatype='integer' name='[punches]' role='measure' type='quantitative' />
+      <column caption='Recoveries' datatype='integer' name='[recoveries]' role='measure' type='quantitative' />
+      <column caption='Red Cards' datatype='integer' name='[red_cards]' role='measure' type='quantitative' />
+      <column caption='Save Percentage' datatype='string' name='[save_percentage]' role='dimension' type='nominal' />
+      <column caption='Saves' datatype='integer' name='[saves]' role='measure' type='quantitative' />
+      <column caption='Shots' datatype='integer' name='[shots]' role='measure' type='quantitative' />
+      <column caption='Shots On Target' datatype='integer' name='[shots_on_target]' role='measure' type='quantitative' />
+      <column caption='Sprint Distance Km' datatype='string' name='[sprint_distance_km]' role='dimension' type='nominal' />
+      <column caption='Stadium' datatype='string' name='[stadium]' role='dimension' type='nominal' />
+      <column caption='Stamina Score' datatype='string' name='[stamina_score]' role='dimension' type='nominal' />
+      <column caption='Successful Crosses' datatype='integer' name='[successful_crosses]' role='measure' type='quantitative' />
+      <column caption='Successful Dribbles' datatype='integer' name='[successful_dribbles]' role='measure' type='quantitative' />
+      <column caption='Successful Passes' datatype='integer' name='[successful_passes]' role='measure' type='quantitative' />
+      <column caption='Tackles' datatype='integer' name='[tackles]' role='measure' type='quantitative' />
+      <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+      <column caption='Top Speed Kmh' datatype='string' name='[top_speed_kmh]' role='dimension' type='nominal' />
+      <column caption='Total Assists Tournament' datatype='integer' name='[total_assists_tournament]' role='measure' type='quantitative' />
+      <column caption='Total Goals Tournament' datatype='integer' name='[total_goals_tournament]' role='measure' type='quantitative' />
+      <column caption='Total Minutes Tournament' datatype='integer' name='[total_minutes_tournament]' role='measure' type='quantitative' />
+      <column caption='Total Passes' datatype='integer' name='[total_passes]' role='measure' type='quantitative' />
+      <column caption='Tournament Rating' datatype='real' name='[tournament_rating]' role='dimension' type='ordinal' />
+      <column caption='Tournament Stage' datatype='string' name='[tournament_stage]' role='dimension' type='nominal' />
+      <column caption='Weight Kg' datatype='integer' name='[weight_kg]' role='measure' type='quantitative' />
+      <column caption='Yellow Cards' datatype='integer' name='[yellow_cards]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Perú&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='fifa_wc_2026_limpio.csv' id='fifa_wc_2026_limpio.csv_A88FCDCDC44E4AD78095457FFCCB8E42'>
+            <properties context=''>
+              <relation connection='textscan.1173bzc0dhmubg14pgxw00stctmd' name='fifa_wc_2026_limpio.csv' table='[fifa_wc_2026_limpio#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES' separator=';'>
+                  <column datatype='string' name='player_id' ordinal='0' />
+                  <column datatype='string' name='player_name' ordinal='1' />
+                  <column datatype='integer' name='age' ordinal='2' />
+                  <column datatype='string' name='nationality' ordinal='3' />
+                  <column datatype='string' name='team' ordinal='4' />
+                  <column datatype='integer' name='jersey_number' ordinal='5' />
+                  <column datatype='string' name='position' ordinal='6' />
+                  <column datatype='integer' name='height_cm' ordinal='7' />
+                  <column datatype='integer' name='weight_kg' ordinal='8' />
+                  <column datatype='string' name='preferred_foot' ordinal='9' />
+                  <column datatype='string' name='club_name' ordinal='10' />
+                  <column datatype='integer' name='market_value_eur' ordinal='11' />
+                  <column datatype='string' name='match_id' ordinal='12' />
+                  <column datatype='date' name='match_date' ordinal='13' />
+                  <column datatype='string' name='stadium' ordinal='14' />
+                  <column datatype='string' name='city' ordinal='15' />
+                  <column datatype='string' name='opponent_team' ordinal='16' />
+                  <column datatype='string' name='tournament_stage' ordinal='17' />
+                  <column datatype='string' name='match_result' ordinal='18' />
+                  <column datatype='integer' name='goals_team' ordinal='19' />
+                  <column datatype='integer' name='goals_opponent' ordinal='20' />
+                  <column datatype='integer' name='minutes_played' ordinal='21' />
+                  <column datatype='integer' name='goals' ordinal='22' />
+                  <column datatype='integer' name='assists' ordinal='23' />
+                  <column datatype='integer' name='shots' ordinal='24' />
+                  <column datatype='integer' name='shots_on_target' ordinal='25' />
+                  <column datatype='string' name='expected_goals_xg' ordinal='26' />
+                  <column datatype='string' name='expected_assists_xa' ordinal='27' />
+                  <column datatype='integer' name='key_passes' ordinal='28' />
+                  <column datatype='integer' name='successful_passes' ordinal='29' />
+                  <column datatype='integer' name='total_passes' ordinal='30' />
+                  <column datatype='string' name='pass_accuracy' ordinal='31' />
+                  <column datatype='integer' name='dribbles_attempted' ordinal='32' />
+                  <column datatype='integer' name='successful_dribbles' ordinal='33' />
+                  <column datatype='integer' name='crosses' ordinal='34' />
+                  <column datatype='integer' name='successful_crosses' ordinal='35' />
+                  <column datatype='integer' name='tackles' ordinal='36' />
+                  <column datatype='integer' name='interceptions' ordinal='37' />
+                  <column datatype='integer' name='clearances' ordinal='38' />
+                  <column datatype='integer' name='blocks' ordinal='39' />
+                  <column datatype='integer' name='aerial_duels_won' ordinal='40' />
+                  <column datatype='integer' name='aerial_duels_lost' ordinal='41' />
+                  <column datatype='integer' name='recoveries' ordinal='42' />
+                  <column datatype='integer' name='defensive_actions' ordinal='43' />
+                  <column datatype='integer' name='fouls_committed' ordinal='44' />
+                  <column datatype='integer' name='fouls_suffered' ordinal='45' />
+                  <column datatype='integer' name='yellow_cards' ordinal='46' />
+                  <column datatype='integer' name='red_cards' ordinal='47' />
+                  <column datatype='integer' name='offsides' ordinal='48' />
+                  <column datatype='integer' name='saves' ordinal='49' />
+                  <column datatype='string' name='save_percentage' ordinal='50' />
+                  <column datatype='integer' name='punches' ordinal='51' />
+                  <column datatype='integer' name='clean_sheet' ordinal='52' />
+                  <column datatype='integer' name='goals_conceded' ordinal='53' />
+                  <column datatype='integer' name='penalty_saves' ordinal='54' />
+                  <column datatype='string' name='distance_covered_km' ordinal='55' />
+                  <column datatype='string' name='sprint_distance_km' ordinal='56' />
+                  <column datatype='string' name='top_speed_kmh' ordinal='57' />
+                  <column datatype='integer' name='accelerations' ordinal='58' />
+                  <column datatype='integer' name='decelerations' ordinal='59' />
+                  <column datatype='string' name='stamina_score' ordinal='60' />
+                  <column datatype='string' name='player_rating' ordinal='61' />
+                  <column datatype='string' name='performance_score' ordinal='62' />
+                  <column datatype='string' name='offensive_contribution' ordinal='63' />
+                  <column datatype='string' name='defensive_contribution' ordinal='64' />
+                  <column datatype='string' name='possession_impact' ordinal='65' />
+                  <column datatype='string' name='pressure_resistance' ordinal='66' />
+                  <column datatype='string' name='creativity_score' ordinal='67' />
+                  <column datatype='string' name='consistency_score' ordinal='68' />
+                  <column datatype='string' name='clutch_performance_score' ordinal='69' />
+                  <column datatype='integer' name='total_goals_tournament' ordinal='70' />
+                  <column datatype='integer' name='total_assists_tournament' ordinal='71' />
+                  <column datatype='integer' name='total_minutes_tournament' ordinal='72' />
+                  <column datatype='integer' name='player_of_match_awards' ordinal='73' />
+                  <column datatype='real' name='tournament_rating' ordinal='74' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Rendimiento Promedio por Selección - FIFA World Cup 2026'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fifa_wc_2026_limpio' name='federated.1mzzqto0893h7w1486fj41b10av5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mzzqto0893h7w1486fj41b10av5'>
+            <column caption='Nationality' datatype='string' name='[nationality]' role='dimension' type='nominal' />
+            <column-instance column='[nationality]' derivation='None' name='[none:nationality:nk]' pivot='key' type='nominal' />
+            <column-instance column='[performance_score]' derivation='None' name='[none:performance_score:nk]' pivot='key' type='nominal' />
+            <column caption='Performance Score' datatype='string' name='[performance_score]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1mzzqto0893h7w1486fj41b10av5].[none:nationality:nk]</rows>
+        <cols>[federated.1mzzqto0893h7w1486fj41b10av5].[none:performance_score:nk]</cols>
+      </table>
+      <simple-id uuid='{4E4D7791-5D23-4D4E-83DA-A6A6BA9A111A}' />
+    </worksheet>
+    <worksheet name='Top 10 Goleadores - FIFA World Cup 2026'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fifa_wc_2026_limpio' name='federated.1mzzqto0893h7w1486fj41b10av5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mzzqto0893h7w1486fj41b10av5'>
+            <column-instance column='[player_name]' derivation='None' name='[none:player_name:nk]' pivot='key' type='nominal' />
+            <column caption='Player Name' datatype='string' name='[player_name]' role='dimension' type='nominal' />
+            <column-instance column='[total_goals_tournament]' derivation='Sum' name='[sum:total_goals_tournament:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Goals Tournament' datatype='integer' name='[total_goals_tournament]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mzzqto0893h7w1486fj41b10av5].[none:player_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_goals_tournament])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:player_name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mzzqto0893h7w1486fj41b10av5].[none:player_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mzzqto0893h7w1486fj41b10av5].[sum:total_goals_tournament:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1mzzqto0893h7w1486fj41b10av5].[none:player_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1mzzqto0893h7w1486fj41b10av5].[sum:total_goals_tournament:qk]</rows>
+        <cols>[federated.1mzzqto0893h7w1486fj41b10av5].[none:player_name:nk]</cols>
+      </table>
+      <simple-id uuid='{220CFA3D-32C4-4478-9BAC-39828C287042}' />
+    </worksheet>
+    <worksheet name='Velocidad vs Distancia'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fifa_wc_2026_limpio' name='federated.1mzzqto0893h7w1486fj41b10av5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mzzqto0893h7w1486fj41b10av5'>
+            <column caption='Distance Covered Km' datatype='string' name='[distance_covered_km]' role='dimension' type='nominal' />
+            <column-instance column='[distance_covered_km]' derivation='None' name='[none:distance_covered_km:nk]' pivot='key' type='nominal' />
+            <column-instance column='[position]' derivation='None' name='[none:position:nk]' pivot='key' type='nominal' />
+            <column-instance column='[top_speed_kmh]' derivation='None' name='[none:top_speed_kmh:nk]' pivot='key' type='nominal' />
+            <column caption='Position' datatype='string' name='[position]' role='dimension' type='nominal' />
+            <column caption='Top Speed Kmh' datatype='string' name='[top_speed_kmh]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mzzqto0893h7w1486fj41b10av5].[none:position:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1mzzqto0893h7w1486fj41b10av5].[none:distance_covered_km:nk]</rows>
+        <cols>[federated.1mzzqto0893h7w1486fj41b10av5].[none:top_speed_kmh:nk]</cols>
+      </table>
+      <simple-id uuid='{79690A63-A8A4-4E83-915E-DDE1EA39D16B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>FIFA World Cup 2026 - Player Performance Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='5250' id='14' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92750' id='9' param='horz' type-v2='layout-flow' w='98400' x='800' y='6250'>
+              <zone h='92750' id='7' type-v2='layout-basic' w='63400' x='800' y='6250'>
+                <zone h='46375' id='5' name='Rendimiento Promedio por Selección - FIFA World Cup 2026' w='63400' x='800' y='6250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46375' id='6' name='Velocidad vs Distancia' w='63400' x='800' y='52625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='350' h='92750' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='35000' x='64200' y='6250'>
+                <zone h='13250' id='10' name='Velocidad vs Distancia' pane-specification-id='0' param='[federated.1mzzqto0893h7w1486fj41b10av5].[none:position:nk]' type-v2='color' w='35000' x='64200' y='6250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='79500' id='11' name='Top 10 Goleadores - FIFA World Cup 2026' w='35000' x='64200' y='19500'>
+                  <layout-cache minheight='331' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>FIFA World Cup 2026 - Player Performance Analysis</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='5250' id='14' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46375' id='5' is-fixed='true' name='Rendimiento Promedio por Selección - FIFA World Cup 2026' w='63400' x='800' y='6250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='79500' id='11' is-fixed='true' name='Top 10 Goleadores - FIFA World Cup 2026' w='35000' x='64200' y='19500'>
+                  <layout-cache minheight='331' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46375' id='6' is-fixed='true' name='Velocidad vs Distancia' w='63400' x='800' y='52625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13250' id='10' name='Velocidad vs Distancia' pane-specification-id='0' param='[federated.1mzzqto0893h7w1486fj41b10av5].[none:position:nk]' type-v2='color' w='35000' x='64200' y='6250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3F9870B1-069F-4FEC-8701-828DF1432BED}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Top 10 Goleadores - FIFA World Cup 2026'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mzzqto0893h7w1486fj41b10av5].[none:player_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3532AFB2-9FD6-4597-BE76-7AE2D8D81A4C}' />
+    </window>
+    <window class='worksheet' name='Rendimiento Promedio por Selección - FIFA World Cup 2026'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mzzqto0893h7w1486fj41b10av5].[none:nationality:nk]</field>
+            <field>[federated.1mzzqto0893h7w1486fj41b10av5].[none:performance_score:nk]</field>
+            <field>[federated.1mzzqto0893h7w1486fj41b10av5].[none:player_rating:nk]</field>
+            <field>[federated.1mzzqto0893h7w1486fj41b10av5].[none:tournament_rating:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{54B3ED3B-7227-4B5E-8293-2DAEDB037EB8}' />
+    </window>
+    <window class='worksheet' name='Velocidad vs Distancia'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.1mzzqto0893h7w1486fj41b10av5].[none:position:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mzzqto0893h7w1486fj41b10av5].[none:distance_covered_km:nk]</field>
+            <field>[federated.1mzzqto0893h7w1486fj41b10av5].[none:position:nk]</field>
+            <field>[federated.1mzzqto0893h7w1486fj41b10av5].[none:top_speed_kmh:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5F7EDED0-07D6-40B0-98E6-CCD1140D03F6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Rendimiento Promedio por Selección - FIFA World Cup 2026' />
+        <viewpoint name='Top 10 Goleadores - FIFA World Cup 2026'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Velocidad vs Distancia'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.1mzzqto0893h7w1486fj41b10av5].[none:position:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A18EA1FE-E052-4015-91C1-88B9B8F9E97A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Rendimiento Promedio por Selección - FIFA World Cup 2026' width='192'>
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 Goleadores - FIFA World Cup 2026' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Velocidad vs Distancia' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
